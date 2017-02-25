@@ -37,6 +37,11 @@ pane_resizing_bindings() {
 	tmux bind-key -r J resize-pane -D "$pane_resize"
 	tmux bind-key -r K resize-pane -U "$pane_resize"
 	tmux bind-key -r L resize-pane -R "$pane_resize"
+
+	tmux bind-key -r ^H resize-pane -L "$pane_resize"
+	tmux bind-key -r ^J resize-pane -D "$pane_resize"
+	tmux bind-key -r ^K resize-pane -U "$pane_resize"
+	tmux bind-key -r ^L resize-pane -R "$pane_resize"
 }
 
 pane_split_bindings() {
